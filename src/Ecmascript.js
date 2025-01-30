@@ -1,18 +1,18 @@
-// Ecmascript.js
 
 // Function to find the longest word
 export const findLongestWord = (words) => {
-  const wordsWithLength = words.map((word) => ({
+  let wordsWithLength = words.map((word) => ({
     mot: word,
     longueur: word.length,
   }));
 
-  const longestWord = wordsWithLength.reduce((longest, current) =>
+  let longestWord = wordsWithLength.reduce((longest, current) =>
     current.longueur > longest.longueur ? current : longest
   );
 
   return `Le mot le plus long est "${longestWord.mot}" avec une longueur de ${longestWord.longueur} caractères.`;
 };
+
 
 // Function to count occurrences of elements
 export const countOccurrences = (input) => {
@@ -21,6 +21,7 @@ export const countOccurrences = (input) => {
     return acc;
   }, {});
 };
+
 
 // Function to calculate total marks
 export const calculateTotalMarks = (students) => {
