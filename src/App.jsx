@@ -15,7 +15,7 @@ function App() {
   const [searchResult, setSearchResult] = useState(null); // State for search result
 
   // Example words array
-  const wordsArray = ["chat", "éléphant", "lion", "hippopotame"];
+  let wordsArray = ["chat", "éléphant", "lion", "hippopotame"];
 
   // Example input array for occurrences
   const input = [
@@ -25,7 +25,7 @@ function App() {
   ];
 
   // Example students array for marks calculation
-  const students = [
+  let students = [
     { name: "John", id: 123, marks: 98 },
     { name: "Baba", id: 101, marks: 23 },
     { name: "John", id: 200, marks: 45 },
