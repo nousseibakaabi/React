@@ -2,24 +2,22 @@ pipeline {
     agent any
 
     triggers {
-        // Déclenche le pipeline dès qu'un push est détecté dans le référentiel Git
-        pollSCM('H/1 * * * *') // Vérifie les changements toutes les 5 minutes
+        // Trigger the pipeline when a GitHub webhook is received
+        githubPush()
     }
 
     stages {
-        stage('Récupération du code source') {
+        stage('Fetch Source Code') {
             steps {
-                // Récupère le code source depuis le référentiel Git
                 checkout scm
             }
         }
 
-        stage('Affichage de la date système') {
+        stage('Display System Date') {
             steps {
-                // Affiche la date système
                 script {
                     def date = new Date()
-                    echo "Date système actuelle : ${date}"
+                    echo "Current system date: ${date}"
                 }
             }
         }
@@ -27,8 +25,7 @@ pipeline {
 
     post {
         always {
-            // Nettoyage ou actions post-build
-            echo 'Build terminé.'
+            echo 'Build completed.'
         }
     }
 }
