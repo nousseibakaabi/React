@@ -2,7 +2,7 @@
 export default function Hello(){
     return (
         <div>
-            <h1>Hello 4TWIN7</h1>
+            <h1>Hello 4TWIN</h1>
         </div>
     );
 }
@@ -12,7 +12,7 @@ export default function Hello(){
 //     render() { 
 //         return (
 //             <div>
-//             <h1>Hello 4TWIN7</h1>
+//             <h1>Hello 4TWIN</h1>
 //          </div>
 //         );
 //     }
