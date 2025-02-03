@@ -3,7 +3,7 @@ pipeline {
 
     triggers {
         // Déclenche le pipeline dès qu'un push est détecté dans le référentiel Git
-        pollSCM('H/5 * * * *') // Vérifie les changements toutes les 5 minutes
+        pollSCM('H/1 * * * *') // Vérifie les changements toutes les 5 minutes
     }
 
     stages {
