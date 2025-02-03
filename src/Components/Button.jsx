@@ -4,7 +4,7 @@ class Button extends Component {
     render() { 
         return (
             <>
-      <Button variant="primary">hello</Button>
+      <Button variant="primary">Incrementer</Button>
       </>
         );
     }
