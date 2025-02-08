@@ -1,0 +1,74 @@
+.todo-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .task-summary {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"], select {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .task-list {
+    margin-top: 15px;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .task-item.completed {
+    background-color: #d4f8d4;
+  }
+  
+  .task-item.completed .task-name,
+  .task-item.completed .task-priority {
+    text-decoration: line-through;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.termine {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  button.non-termine {
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  button.supprimer {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button.ajouter {
+    background-color: #008cba;
+    color: white;
+  }
+  

@@ -7,9 +7,19 @@ import "./App.css";
 import Hello from "./Components/Hello";
 import Form from "./Components/Form";
 import { Button } from "react-bootstrap";
-//import Form from "./Components/Form";
+import Counter from './Components/Counter';
+import List from "./Components/List";
+import ColorBox from "./Components/ColorBox";
+import Note from "./Components/Note";
+import TodoList from "./Components/ToDoList";
 
 function App() {
+
+  const tasks = [
+    { name: "Finir le projet React", priority: "Haute", completed: false },
+    { name: "Préparer le repas", priority: "Moyenne", completed: false },
+    { name: "Aller courir", priority: "Basse", completed: false },
+  ];
   // const [count, setCount] = useState(0);
   // const [longestWord, setLongestWord] = useState(""); // State for the longest word
   // const [occurrences, setOccurrences] = useState(null); // State for occurrences
@@ -126,10 +136,55 @@ function App() {
       )}
     */}
 
-    <Hello />
+    {/* <Hello />
     <Form labelle="firstname" namee="firstname"/>
     <Form labelle="lastname"/>
-    <Button />
+    <Button /> */}
+
+
+    <div>
+      <h2>Exercice 1 : Création d’un compteur
+      </h2>
+      <Counter initialCount={0} step={1} />
+    </div>
+    
+    <br />
+    <br />
+    <br />
+    <div>
+    <h2>Exercice 2 : Gestion d’une liste dynamique
+    </h2>
+    <List initialItems={["React", "Angular", "VueJs"]} placeholder="Ajouter un nouveau élement" />
+    </div>
+    
+    <br />
+    <br />
+    <br />
+
+    <div>
+    <h2>Exercice 3 : Changement de couleur dynamique</h2>
+      <ColorBox initialColor="#3498db" colorOptions={["#e74c3c", "#2ecc71", "#f1c40f", "#9b59b6", "#34495e"]} />
+    </div>
+
+
+    <br />
+    <br />
+    <br />
+
+    <div>
+    <h2>Exercice 4: Gestionnaire de notes</h2>
+       <Note initialNotes={[15, 12, 18]} />
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div>
+    <h2>Exercice 5 : Todo List avec priorités</h2>
+      <TodoList initialTasks={tasks} />
+    </div>
+
    </> 
   );
 }
