@@ -12,6 +12,8 @@ import List from "./Components/List";
 import ColorBox from "./Components/ColorBox";
 import Note from "./Components/Note";
 import TodoList from "./Components/ToDoList";
+import Events from "./Components/Events"; 
+
 
 function App() {
 
@@ -183,6 +185,16 @@ function App() {
     <div>
     <h2>Exercice 5 : Todo List avec priorités</h2>
       <TodoList initialTasks={tasks} />
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    
+    <div>
+    <h2>Event Management</h2>
+      <Events />
     </div>
 
    </> 
