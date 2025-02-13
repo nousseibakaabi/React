@@ -25,7 +25,7 @@ const Products = () => {
 
     return (
         <>
-            {showWelcome && <Alert variant="success">Bienvenu</Alert>}
+            {showWelcome && <Alert variant="success">Welcome</Alert>}
             <Row>
                 {products.map((product, index) => (
                     <Product
