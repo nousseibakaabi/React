@@ -13,15 +13,17 @@ import ColorBox from "./Components/ColorBox";
 import Note from "./Components/Note";
 import TodoList from "./Components/ToDoList";
 import Events from "./Components/Events"; 
+import Products from "./Components/products"; 
+
 
 
 function App() {
 
-  const tasks = [
-    { name: "Finir le projet React", priority: "Haute", completed: false },
-    { name: "Préparer le repas", priority: "Moyenne", completed: false },
-    { name: "Aller courir", priority: "Basse", completed: false },
-  ];
+  // const tasks = [
+  //   { name: "Finir le projet React", priority: "Haute", completed: false },
+  //   { name: "Préparer le repas", priority: "Moyenne", completed: false },
+  //   { name: "Aller courir", priority: "Basse", completed: false },
+  // ];
   // const [count, setCount] = useState(0);
   // const [longestWord, setLongestWord] = useState(""); // State for the longest word
   // const [occurrences, setOccurrences] = useState(null); // State for occurrences
@@ -144,7 +146,7 @@ function App() {
     <Button /> */}
 
 
-    <div>
+    {/* <div>
       <h2>Exercice 1 : Création d’un compteur
       </h2>
       <Counter initialCount={0} step={1} />
@@ -190,11 +192,16 @@ function App() {
     <br />
     <br />
     <br />
-    <br />
+    <br /> */}
     
-    <div>
+    {/* <div>
     <h2>Event Management</h2>
-      <Events />
+      <Products />
+    </div> */}
+
+
+    <div>
+      <Products />
     </div>
 
    </> 
