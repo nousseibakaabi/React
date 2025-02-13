@@ -5,7 +5,7 @@ const Event = ({ name, img, price, nbTickets, nbParticipants, like, bookEvent, t
     const [message, setMessage] = useState('');
 
     // Define a default "sold out" image
-    const soldOutImage = '/public/images/sold_out.png'; 
+    const soldOutImage = '/images/sold_out.png'; 
 
     const handleBooking = () => {
         if (nbTickets > 0) {
